@@ -1,7 +1,7 @@
 # abs-listen-state-migrator
 This python script will assist with migrating mediaProgress for an existing user in [Audiobookshelf](https://audiobookshelf.org).
 
-I wrote this, admittedly shitty, script because I wanted to change my folder structure for my media, but found that audiobookshelf REALLY doesn't want you to do that.
+I wrote this, admittedly shitty, script because I wanted to change my folder structure for my media, but found that audiobookshelf REALLY doesn't want you to do that. The script requires that either ASIN or ISBN be populated for the books that you want to sync listen state for (I had to have something to consistant key to between seperate libraries or even abs servers, and those seemed like the best option).
 
 It should be noted that this only performs a limited migration of mediaProgress. It does NOT migrate listen stats. It does however migrate the following fields:
 - currentTime
