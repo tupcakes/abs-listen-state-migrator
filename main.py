@@ -26,6 +26,10 @@ dest_url = args.dest_url
 source_library_id = args.source_library_id
 dest_library_id = args.dest_library_id
 
+if source_library_id == dest_library_id:
+    print("Source and destination libraries can't be the same.")
+    exit()
+
 # Loop through all library items in given library.
 for item in get_library_items(source_url, source_api_key, source_library_id)["results"]:
     # get the media progress for the current item.
